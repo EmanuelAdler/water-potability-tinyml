@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'v3_rfc_water_emlearn.ino.bin'
+elf = 'v3_rfc_water_emlearn.ino.elf'
+rfc2217ServerPort = 4000
