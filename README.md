@@ -230,3 +230,27 @@ Metrics computed on the embedded 716-sample test set (balanced, stratified split
 These match the Python evaluation in the notebook (`accuracy_score`, `precision_score`, `recall_score`, `f1_score` from scikit-learn), confirming that the emlearn conversion preserves model behaviour exactly.
 
 > The ~60% accuracy reflects the inherent difficulty of the water potability dataset (class imbalance, missing values, overlapping feature distributions). The model was optimized for F1-score and memory footprint rather than raw accuracy.
+
+---
+
+## Publication
+
+This model was developed and used in the following peer-reviewed article:
+
+> Emanuel Adler Medeiros Pereira, Jeferson Fernando da Silva Santos, Erick de Andrade Barboza,
+> **An energy efficient TinyML model for a water potability classification problem**,
+> *Sustainable Computing: Informatics and Systems*, Volume 43, 2024, 101010, ISSN 2210-5379.
+> https://doi.org/10.1016/j.suscom.2024.101010
+
+**Abstract:** Safe drinking water is an essential resource and a fundamental human right, but its access continues beyond billions of people, posing numerous health risks. A key obstacle in monitoring water quality is managing and analyzing extensive data. Machine learning models have become increasingly prevalent in water quality monitoring, aiding decision makers and safeguarding public health. An integrated system, which combines electronic sensors with a Machine Learning model, offers immediate feedback and can be implemented in any location. This type of system operates independently of an Internet connection and does not depend on data derived from chemical or laboratory analysis. The aim of this study is to develop an energy-efficient TinyML model to classify water potability that operates as an embedded system and relies solely on the data available through electronic sensing. When compared with a similar model functioning in the Cloud, the proposed model requires 51.2% less memory space, performs all inference tests approximately 99.95% faster, and consumes about 99.95% less energy. This increase in performance enables the classification model to run for years in devices that are very resource-constrained.
+
+---
+
+This model was also used in the following conference paper:
+
+> Emanuel Pereira, Jeferson Santos, Erick Barboza,
+> **Comparing TinyML Models and Libraries for On-Device Water Potability Classification**,
+> *2024 XIV Brazilian Symposium on Computing Systems Engineering (SBESC)*, 2024, pp. 1–6, ISSN 2324-7894.
+> https://doi.org/10.1109/SBESC65055.2024.10771818
+
+**Abstract:** Water pollution, mainly caused by human activities that elevate harmful substance concentrations above ideal levels, threatens both the supply and quality of drinking water and also adversely affects economic development and environmental sustainability. Machine learning, combined with TinyML and the Internet of Things, is being used to predict drinking water classification, providing a promising alternative to traditional water sample monitoring. This study aims to compare various machine learning models and TinyML libraries to solve the classification problem of water potability. The Random Forest algorithm showed the best performance in Accuracy, Precision, Recall, and F1-Score, with Emlearn and Micromlgen libraries achieving the fastest inference time of 362 milliseconds. The multilayer perceptron model with the EmbML library used the least memory, with 283,113 bytes, and the Random Forest model with Micromlgen had the lowest energy consumption, using only 104.534 millijoules. This work can help researchers and professionals implement water potability classification systems and use TinyML in other classification problems as well.
